@@ -1,0 +1,62 @@
+*::after,   
+*::before,
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+.timer-app{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-inline: 1rem;
+}
+.input{
+    display: block;
+    border: none;  
+    width: 220px;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    background-color: transparent;
+}
+.input[type="number"]::-webkit-inner-spin-button,
+.input[type="number"]::-webkit-outer-spin-button{
+    display: none;
+}
+.input:focus,
+.input:focus-within{
+    outline: 0;
+}
+#circle{
+    stroke: limegreen;
+}
+.controls{
+    position: absolute;
+    max-width: 100%;
+}
+.controls div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #fff;
+}
+.pause,.start{
+    background: transparent;
+    border: none;
+    width: 40px;
+    cursor: pointer;
+}
