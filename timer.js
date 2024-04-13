@@ -32,10 +32,9 @@ class Timer{
 
         if(this.timeRemaning <= 0){
             // this function stops the timer when it reaches 0
-            this.pause(); 
+            this.pause();  
             if(this.onComplete){
-                this.onComplete();
-                this.enableInput();     
+                this.onComplete();       
             }
         }
         else{

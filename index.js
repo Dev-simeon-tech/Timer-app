@@ -21,7 +21,7 @@ const timer = new Timer(durationInput,startButton,pauseButton,
     
     },
     onComplete() {
-        console.log('complete')
+        console.log('complete');
     },
    });
 
